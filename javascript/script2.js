@@ -1,6 +1,6 @@
 
 let header = document.querySelector("header");
-let menu = document.querySelector("#menu-icon");
+let menu = document.querySelector(".fa-solid fa-bars");
 
 let navbar = document.querySelector(".navbar");
 
