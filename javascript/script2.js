@@ -28,6 +28,12 @@ window.onscroll = () => {
         document.body.classList.remove("active");
  }
  }
+ const hamburger = document.querySelector(".hamburger");
+const navLink = document.querySelector('.nav-link');
+
+hamburger.addEventListener('click',() =>{
+    navLink.classList.toggle('hide');
+})
 
 // darkmode.addEventListener('click', onclick = () => {
 //     if (darkmode.classList.container("fa-moon")) {
