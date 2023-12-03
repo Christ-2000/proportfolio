@@ -1,6 +1,6 @@
 
 let header = document.querySelector("header");
-let menu = document.querySelector(".fa-solid fa-bars");
+let menu = document.querySelector("#menu-icon");
 
 let navbar = document.querySelector(".navbar");
 
@@ -21,26 +21,11 @@ window.onscroll = () => {
 
 
  darkmode.onclick = () => {
-        if (darkmode.classList.contains("fa-moon")) {
-        darkmode.classList.replace("fa-moon", "fa-sun");
+        if (darkmode.classList.contains("bx-moon")) {
+        darkmode.classList.replace("bx-moon", "bx-sun");
          document.body.classList.add("active");
- } else {         darkmode.classList.replace("fa-sun", "fa-moon");
+ }
+  else {darkmode.classList.replace("bx-sun", "bx-moon");
         document.body.classList.remove("active");
  }
  }
- const hamburger = document.querySelector(".hamburger");
-const navLink = document.querySelector('.nav-link');
-
-hamburger.addEventListener('click',() =>{
-    navLink.classList.toggle('hide');
-})
-
-// darkmode.addEventListener('click', onclick = () => {
-//     if (darkmode.classList.container("fa-moon")) {
-//         darkmode.classList.replace("fa-moon", "fa-sun");
-//         document.body.classList.add("active");
-//     } else {
-//         darkmode.classList.replace("fa-sun", "fa-moon");
-//         document.body.classList.remove("active");
-//     }
-// })

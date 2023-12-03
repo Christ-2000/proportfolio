@@ -34,20 +34,18 @@ body {
 *::selection {
     background: var(--main-color);
     color: var(--bg-color);
-} */
- /*.heading {
+}
+.heading{
     text-align: center;
-}*/
 
- /*.heading h2 {
+}
+.heading h2{
     font-size: 2rem;
 }
-
-.heading span {
-    font-size: var(--p-font);
-    color: rgb(214, 18, 185);
-}*/ 
-
+.heading span{
+   font-size: var(--p-font); 
+   color: rgba(2, 166,70);
+}
  header {
     position: fixed;
     width: 100%;
@@ -61,15 +59,6 @@ body {
     transition: 0.2s;
     box-shadow: -3px -4px 8px #ffffff73, 2px 2px 5px rgb(19, 14, 14);
 }
-/* header ul{
-    display: flex;
-    gap: 15px;
-    position: relative;
-}
-header ul #darkmode {
-margin-bottom: 25px;
-
-} */
  .logo {
     font-size: 1.6rem;
     font-weight: 600;
@@ -122,86 +111,6 @@ margin-bottom: 25px;
      text-transform: capitalize;
  } */
  
- .nav{
-     display: flex;
-     justify-content: space-between;
-     text-align: center;
-     padding-top: 20px;
-     background: grey;
- }
- .logo{
-     font-size: 1.8rem;
-     text-transform: uppercase;
-     color: rgb(97, 226, 201);
-     padding-left: 20px;
- }
- .hamburger{
-     padding-right: 20px;
-     cursor: pointer;   
- }
- .hamburger .line{
-     display: block;
-     width: 40px;
-     height: 5px;
-     margin-bottom: 10px;
-     background-color: black;
- }
- .nav-link{
-     position:fixed;
-     width: 94%;
-     top: 5rem;
-     left: 18px;
-     background-color: rgb(203, 237, 79);
- }
- .nav-link a{
-     display: block;
-     text-align: center;
-     padding: 10px 0;
- }
- .nav-link a:hover{
-     background-color: rgb(75, 2, 75);
- }
- .hide{
-     display: none;
- }
- text-box{
-    width: 90%;
-    color: #f58787;
-    top:50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    /* background: #f44336; */
-}
-.text-box h1{
-   font-size: 62px;
-}
-.text-box p{
-    margin: 10px 0 48px;
-    font-size: 14px;
-    color: #fff;
-}
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid#fff;
-    padding: 17px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 100px;
-
-}
-.hero-btn:hover{
-    border: 1px solid#f44336;
-    background: #f44336;
-    transition: 1s;
-}
-
 
 .home {
     /*background-color: rgb(234, 160, 160);*/
@@ -265,7 +174,7 @@ margin-bottom: 25px;
     color: #fff;
     padding: 0.7rem 1.3rem;
     border: 0.6rem;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .btn:hover {
@@ -386,24 +295,24 @@ span {
 }
 
 .services-container {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
-    align-items: none;
-    text-decoration: none;
+    /* align-items: none;
+    text-decoration: none; */
 }
 
 .services-box {
     padding: 20px;
     width: 260px;
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     border-radius: 0.5rem;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid var(--main-color);
     box-shadow: 0px 2px 7px rgba(14 55 54/15%);
 }
 
@@ -461,8 +370,9 @@ form,input,textarea {
     width: 100%;
     border: none;
     outline: none;
+    background: rgb(249, 249, 211);
     margin-bottom: 1rem;
-    color: black;
+    color:var(--text-color);
 }
 textarea::placeholder {
     color: rgb(233, 143, 25);
@@ -526,25 +436,8 @@ form textarea {
 
 /* responsive*/
 
-@media screen and (min-width:600px){
-    .nav-link{
-        display: block;
-        position:static;
-        width: auto;
-        margin-right: 20px;
-        background: none;
-    }
-    .nav-link a{
-        display: inline-block;
-        padding:15px 20px;
-    }
-    .hamburger{
-        display: none;
-    }
-    .content{
-        margin-top: 300px;
-    }
-/* @media(max-width:991px) {
+
+   @media(max-width:991px) {
     header {
         padding: 18px 4%;
     }
@@ -552,7 +445,7 @@ form textarea {
     section {
         padding: 50px 4%;
     }
-} */
+} 
 
 @media(max-width:881px) {
     :root {
@@ -570,7 +463,7 @@ form textarea {
         padding: 11px 4%;
     }
 
-    .fa-bars {
+    #menu-icon {
         display: initial;
         color: rgb(240, 161, 65);
     }
@@ -583,7 +476,7 @@ form textarea {
         display: flex;
         flex-direction: column;
         background: #0f0c27;
-        box-shadow: 0 4px 4px black;
+        box-shadow: 0 4px 4px rgba(0 0 0/100%);
         transition: 0.2s ease;
         text-align: center;
     }
@@ -632,7 +525,7 @@ form textarea {
     }
     .skills-img {
         padding-top: 2rem;
-        display: grid;
+        display: flex;
         justify-content: center;
     }
     .contact-form form {
@@ -664,4 +557,4 @@ form textarea {
     .contact-button {
        width: 20%;
     }
-}}
+}
