@@ -1,220 +1,467 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fallback/1.1.9/fallback.min.js"
-        integrity="sha512-0hyw2VPVyEmXX9qNAC54OLuiShjh8pA3tWTUrBoIZWSVS94rJ6w1nZZl9VFO3qBdHBBwIFFsEIYub1uel8aaBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!--box-icons-->
-        <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <!--font google-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style/index.css">
 </head>
-
 <body>
-    <!--Navbar Section start -->
-     <header>
-        <a href="#" class="logo">Chris<span>tella</span>.</a>
-        <div class=" bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="#home">home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#service">service</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <div class="bx bx-moon" id="darkmode">
-            </div>
+    <!--Menu Navigation-->
+     <div class="header">
+    <header>
+      <div class="logo">
+        <a href="">Christella</a>
+    </div>
+    <nav id="nav">
+        <ul>
+    
+           <li><a href="#home" onclick="seleccionar()">Home</a> </li>
+           <li><a href="#aboutme" onclick="seleccionar()">About</a> </li>
+           <li><a href="#Skills" onclick="seleccionar()">Skills</a> </li>
+           <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a> </li>
+           <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a> </li>
+           <li><a href="#contact" onclick="seleccionar()">Contact</a> </li>
         </ul>
-    </hr>
-    </header> 
+    </nav>
+<div class="nav-responsive" onclick="mostmenu()">
+    <i class="fa-solid fa-bars"></i>
+</div>
+      </header>
+</div>
+<!-- Section  home-->
+<section id="home" class="home">
+    <div class="content-banner">
+        <div class="content-img">
+          <img src="images/PXL_20231208_104729331.PORTRAIT.jpg" alt="">
+        </div>
+        <h1>CHRISTELLA MUNEZERO</h1>
+        <h2>Web Developer</h2>
+        <div class="icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
 
-</hr>
-    <!--Navbar section End-->
+        </div>
+    </div>
+</section>
+<!-- About Me-->
+<section id="aboutme" class="aboutme">
+    <div class="content-about">
+        <h2>About Me</h2>
+        <p><span> Hello, I'  am Christella MUNEZERO.</span> I'm A web Designer and Web Developer.</p>
+    
+    <div class="file">
+        <!--information personal-->
+        <div class="data">
+      <h3>personal Data</h3>
+      <ul>
+        <li>
+            <strong>Date Of Birth</strong>
+            23-03-2001
+        </li>
+        <li>
+            <strong>Telephone</strong>
+            +250 790830834
+        </li>
+        <li>
+            <strong>Email</strong>
+           c.munezero026@gmail.com
+        </li>
+        <li>
+            <strong>Direction</strong>
+            Kigali-Rwanda
+        </li>
+    </ul>
+        </div>
+        <!--adress-->
+        <div class="data">
+          <h3>Adress</h3>  
+          <div class="content-adress">
+            
 
-    <!--Home Section Start-->
-    <section class="home" id="home">
-        <div class="social">
-            <a href="https://github.com/Christ-2000?tab=repositories"><i class="fa-brands fa-github"></i></i></a>
-            <a href="https://web.facebook.com/reel/950545022712234"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="home-img">
-            <img src="./images/IMG_20230605_141351_528.jpg" alt="">
-        </div>
-        <div class="home-text">
-            <span>Hello, I'm</span>
-            <h1>Christella MUNEZERO</h1>
-            <h2>Frontend Developer</h2>
-            <p> As normaly my Name is christella Munezero
-                 the title job I'm frontend developer 
-                 I'm experienced about it .I invite for every one 
-                 to like it and with commitement to get skills about
-                  this program of coding is very nice to folow our activities
-                    and make sure you are intersted for this program thank you for every
-                     which are intersted for it.
-                </p>
-            <a href="./images/christella cv.html" class="btn">Download cv</a>
-        </div>
-    </section>
-    <!--Home Section End-->
-    <!--ABOUT SECTION START-->
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>About ME</h2>
-            <span>Introduction</span>
-        </div>
-        <div class="about-container">
-            <div class="about-img">
-                <img src="./images/IMG_20230605_141351_528.jpg" alt="width=300" height=300>
+            <div class="adres">
+           <i class="fa-solid fa-gamepad"></i>
+                <span>Game</span>
             </div>
-            <div class="about-text">
+
+                <div class="adres">
+                    <i class="fa-solid fa-headphones"></i>
+                    <span>Music</span>
+                </div>
+
+                 <div class="adres">
+                        <i class="fa-solid fa-plane"></i>
+                        <span>kigali</span>
+                    </div>
+
+                        <div class="adres">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>Mac Os</span>
+                        </div>
+
+                            <div class="adres">
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <span>Programmer</span>
+                            </div>
+
+                                <div class="adres">
+                                    <i class="fa-solid fa-book"></i>
+                                    <span>Libraly</span>
+                                </div>
+
+                                    <div class="adres">
+                                        <i class="fa-solid fa-camera"></i>
+                                        <span>Photos</span>
+                                     </div>
+            </div>
+          </div>
+        </div>
+    
+        
+<button>
+<a href="images/christella cv.html">Download CV</a>  <i class="fa-solid fa-download"></i>
+<span class="overlay"></span>
+</button>
+    </div>
+</section>
+<!-- Section Skills-->
+<section id="Skills" class="skills">
+    <div class="content-skills">
+        <h2>Skills</h2>
+        <div class="file">
+            <!--Technical akills -->
+            <div class="data">
+                <h3>Technical Skills</h3>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <div class="barra-skill">
+                     <div class="progress Javascript">
+                        <span>75%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>HTML&CSS</span>
+                    <div class="barra-skill">
+                     <div class="progress htmlcss">
+                        <span>85%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Photoshop</span>
+                    <div class="barra-skill">
+                     <div class="progress photoshop">
+                        <span>50%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Wordpress</span>
+                    <div class="barra-skill">
+                     <div class="progress wordpress">
+                        <span>60%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Drops</span>
+                    <div class="barra-skill">
+                     <div class="progress drops">
+                        <span>55%</span>
+                     </div>   
+                    </div>
+                </div>
+
+            </div>
+            <!-- professional skills -->
+            <div class="data">
+                <h3>Professional Skills</h3>
+                <div class="skill">
+                    <span>Comminication</span>
+                    <div class="barra-skill">
+                     <div class="progress comminication">
+                        <span>65%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>trabaje en </span>
+                    <div class="barra-skill">
+                     <div class="progress trabaje ">
+                        <span>85%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Creativity</span>
+                    <div class="barra-skill">
+                     <div class="progress creativity">
+                        <span>90%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Dedication</span>
+                    <div class="barra-skill">
+                     <div class="progress Dedication">
+                        <span>60%</span>
+                     </div>   
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <span>Project Managment</span>
+                    <div class="barra-skill">
+                     <div class="progress project">
+                        <span>95%</span>
+                     </div>   
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- curriculum-->
+<section id="curriculum" class="curriculum">
+    <div class="content-curriculum">
+        <h2>Curriculum</h2>
+        <div class="file">
+            <div class="data izquierda">
+                <h3>Edication</h3>
+                <div class="item izq">
+                <h4>Math Physics And Geography</h4>
+                <span class="casa">Rusumo High School</span>
+                <span class="fecha">2005 - 2008</span>
+                <p>Lorem ipsum dolor sit amet consectetur 
+                    adipisicing elit. Molestiae mollitia
+                     perferendis deserunt doloremque,
+                    ipsa eligendi cupiditate nemo 
+                    dolorum debitis illum, maxime earum
+                    blanditiis error explicabo, eaque
+                     consectetur placeat ratione minima? </p>
+             <div class="connector">
+                <div class="circuloi"></div>
+             </div>
+                </div>
+
+                <div class="item izq">
+                    <h4>Math Physics And Geography</h4>
+                    <span class="casa">Rusumo High School</span>
+                    <span class="fecha">2019 - 2022</span>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Molestiae mollitia
+                         perferendis deserunt doloremque,
+                        ipsa eligendi cupiditate nemo 
+                        dolorum debitis illum, maxime earum
+                        blanditiis error explicabo, eaque
+                         consectetur placeat ratione minima? </p>
+                 <div class="connector">
+                    <div class="circuloi"></div>
+                 </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>ari In Multmedia</h4>
+                        <span class="casa">University de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Molestiae mollitia
+                             perferendis deserunt doloremque,
+                            ipsa eligendi cupiditate nemo 
+                            dolorum debitis illum, maxime earum
+                            blanditiis error explicabo, eaque
+                             consectetur placeat ratione minima? </p>
+                     <div class="connector">
+                        <div class="circuloi"></div>
+                     </div>
+                        </div>
+            </div>
+
+            <div class="data derecha">
+                <h3>Experience of trabajo</h3>
+                <div class="item der">
+                <h4>front-end Developer</h4>
+                <span class="casa">Nombre de compania</span>
+                <span class="fecha">2005 - 2008</span>
                 <p>As normaly my Name is christella Munezero
                     the title job I'm frontend developer 
                     I'm experienced about it and also I'm appreciate the every one 
                      who like this programing is a first step to know it
                      ,so as frontend developer I'm good at in html,css ,javascript ,express and react .
-                     so thank for every one follow us</p>
-                <div class="information">
-                    <div class="info-box">
-                        <i class="fa-solid fa-user"></i></i>
-                        <span>Name</span>
+                     so thank for every one follow us </p>
+             <div class="connectord">
+                <div class="circulod"></div>
+             </div>
+                </div>
+
+                <div class="item der">
+                    <h4>front-end Developer</h4>
+                    <span class="casa">Nombre de compania</span>
+                    <span class="fecha">2023 - 2024</span>
+                    <p>As normaly my Name is christella Munezero
+                        the title job I'm frontend developer 
+                        I'm experienced about it .I invite for every one 
+                        to like it and with commitement to get skills about
+                         this program of coding is very nice to folow our activities
+                           and make sure you are intersted for this program thank you for every
+                            which are intersted for it.</p>
+                 <div class="connectord">
+                    <div class="circulod"></div>
+                 </div>
                     </div>
-                    <div class="info-box">
-                        <i class="fa-solid fa-phone"></i></i>
-                        <span>+122234567789</span>
-                    </div>
-                    <div class="info-box">
-                        <i class="fa-solid fa-envelope"></i>"</i></i>
-                        <span>abc@gmail.com</span>
-                    </div>
-                </div>
-                <a href="./images/christella cv.html" class="btn">Downloded cv</a>
-            </div>
-        </div>
-    </section>
-    <!--ABOUT SECTION End-->
-    <!--skills start-->
-    <section class="skills" id="skills">
-        <div class="heading">
-            <h2>Skills</h2>
-            <span>My Skills</span>
-        </div>
-        <div class="skills-container">
-            <div class="bars">
-                <div class="bars-box">
-                    <h3>HTML</h3>
-                    <span>95%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar html-bar"></div>
-                </div>
-                <div class="bars-box">
-                    <h3>CSS</h3>
-                    <span>85%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar css-bar"></div>
-
-                </div>
-                <div class="bars-box">
-                    <h3>javascript</h3>
-                    <span>75%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar js-bar"></div>
-
-                </div>
-                <div class="bars-box">
-                    <h3>React</h3>
-                    <span>80%</span>
-                    <div class="light-bar"></div>
-                    <div class="percent-bar react-bar"></div>
-                </div>
-            </div>
-            <div class="skills-img">
-                <img src="./images/IMG_20230605_141351_528.jpg" alt="width=300" height=300>
-                <!--you can put image as you wont-->
-            </div>
-        </div>
-
-    </section>
-
-    <!--skills end-->
-    <!--service start-->
-    <section class="services" id="service">
-        <div class="heading">
-            <h2>Services</h2>
-            <span>Our services</span>
-        </div>
-        <div class="services-container">
-            <div class="services-box">
-                <i class="fa-solid fa-code"></i></i>
-                <h3>Web Development</h3>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="services-box">
-                <i class="fa-solid fa-eye-slash"></i></i></i>
-                <h3>Backend Development</h3>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="services-box">
-                <i class="fa-solid fa-brush"></i></i>
-                <h3>UI/UX Design</h3>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="services-box">
-                <i class="fa-solid fa-bug"></i></i>
-                <h3>App Development</h3>
-                <a href="#">Learn More</a>
+                   
+                    <div class="item der">
+                        <h4>front-end Developer</h4>
+                        <span class="casa">Nombre de compania</span>
+                        <span class="fecha">2023 - 2024</span>
+                        <p>As normaly my Name is christella Munezero
+                            the title job I'm frontend developer 
+                            I'm experienced about it .I invite for every one 
+                            to like it and with commitement to get skills about
+                             this program of coding is very nice to folow our activities
+                               and make sure you are intersted for this program thank you for every
+                                which are intersted for it. </p>
+                     <div class="connectord">
+                        <div class="circulod"></div>
+                     </div>
+                        </div>
             </div>
 
-
-        </div>
-
-    </section>
-    <!--service end-->
-    <!--contact start-->
-    <section class="contact" id="contact">
-        <div class="heading">
-            <h2>contact</h2>
-            <span>connect with us</span>
-        </div>
-        <div class="contact-form">
-            <form action="#">
-                <input type="text" placeholder="your Name">
-                <input type="Email" placeholder="your Email">
-                <textarea name="" id="cols=" 30 rows="10" placeholder="write Message Here...."></textarea>
-                <input type="button" value="send" class="contact-button">
-            </form>
-
-        </div>
-
-    </section>
-    <!--contact end-->
-    <div class="footer">
-        <h2>follow us</h2>
-        <div class="footer-social">
-            <a href="#"><i class="fab fa-facebook"></i>
-            </a><a href=""><i class="fab fa-twitter"></i></a>
-
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
     </div>
-    <div class="copyright">
-        portflix | All Right Resserved
+</section>
+
+<!-- SECTION PORTIFLIO -->
+<section id="portfolio" class="portfolio">
+<div class="contain-seccion">
+    <h2>PORTIFLIO</h2>
+    <div class="galeria">
+        <div class="project">
+            <img src="./images/photo.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./images/a.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./images/b.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./images/c.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./images/d.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="./images/db.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="./images/pc.jpg" alt="">
+            <div class="overlay">
+                <h3>Disello Creative</h3>
+                <p>photograph</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<!--  Contact Section-->
+<section id="contact" class="contact">
+    <div class="contact-section">
+        <h2>CONTACT</h2>
+        <div class="file">
+            <!-- Form-->
+            <div class="data">
+             <input type="text" placeholder="tu nombre">
+             <input type="text" placeholder="phone number">
+             <input type="text" placeholder="Direction de correo">
+             <input type="text" placeholder="Tera">
+             <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+             <button>
+                Send message <i class="fa-solid fa-paper-plane"></i>
+                <span class="overlay"></span>
+             </button>
+            </div>
+         
+            <div class="data">
+        <img src="./images/mp.jpg" alt="">
+        <div class="info">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Location: Kigali Rwanda
+                </li>
+                <li>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                   Rwanda: +250 790830834
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                   Email: c.munezero026@gmail.com
+                </li>
+            </ul>
+        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<footer>
+    <a href="#home" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+    </a>
+
+    <div class="icon">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
 
     </div>
-   <script src="./javascript/script2.js"></script>
-
+</footer>
+<script src="javascript/script2.js"></script>
 </body>
-
 </html>

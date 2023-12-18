@@ -1,31 +1,16 @@
+let menuVisible= false;
+function mostmenu(){
+    if(menuVisible){
+        document.getElementById("nav").classlist ="";
+        menuVisible = false;
 
-let header = document.querySelector("header");
-let menu = document.querySelector("#menu-icon");
-
-let navbar = document.querySelector(".navbar");
-
-
-window.addEventListener("scroll", () => {
-    header.classList.toggle("shadow", window.scrollY > 0);
-});
-
-menu.onclick = () => {
-    navbar.classList.toggle("active");
-};
-
-window.onscroll = () => {
-    navbar.classList.remove("active");
+    }
+    else{
+        document.getElementById("nav").classList ="responsive";
+        menuVisible = true;
+    }
 }
-//darkmode/light mode
- let darkmode = document.querySelector ("#darkmode");
+function selection(){
 
+}
 
- darkmode.onclick = () => {
-        if (darkmode.classList.contains("bx-moon")) {
-        darkmode.classList.replace("bx-moon", "bx-sun");
-         document.body.classList.add("active");
- }
-  else {darkmode.classList.replace("bx-sun", "bx-moon");
-        document.body.classList.remove("active");
- }
- }
